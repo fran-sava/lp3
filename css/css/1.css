@@ -25,7 +25,7 @@ a{
 
 p{
     /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
-    font-family: embassy;
+    font-family: embassy;/*Utilizar una fuente interna*/
     color: darkblue;
     background: darkgray;
 }
