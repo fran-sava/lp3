@@ -1,16 +1,16 @@
 /*
-do{
-    operaciones;
-}
-while(condicion);
+break
 */
 
 'use strict'
 var año=2020;
-do {
+while(año <= 2050){
+    if (año == 2025){
+        break;
+    }
     document.write(año, "<br>");
-    año++;
-} while (año <= 2050);
+    año++
+}
 
 
 
