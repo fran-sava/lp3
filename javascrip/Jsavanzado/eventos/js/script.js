@@ -1,0 +1,93 @@
+/*Eventos
+Son funciones que se ejecutan cada vez que se realiza algo
+Ejemplo: movimientos del mouse, teclado, bortrar, etc
+*/
+
+//Llmar en las etiquetas correspondientes al scritp.js
+
+window.addEventListener('load', ()=>{
+
+
+    //1-
+    var boton2=document.querySelector("#boton2");
+
+    //2-
+    function cambiarcolor(){
+        var bg=boton2.style.background;
+        if(bg=="green"){
+            boton2.style.background="red";
+
+        }else{
+            boton2.style.background="green";
+        }
+    }
+    //3-Evento click
+    var boton3=document.querySelector("#boton3");
+    boton3.addEventListener('click', function(){
+        cambiarcolor();
+    });
+
+    //4-Evento mouse over
+    boton3.addEventListener('mouseover', function(){
+        boton3.style.background="#521897";
+    });
+
+    //5-Mouse out
+    boton3.addEventListener('mouseout', function(){
+        boton3.style.background="yellow";
+
+    });
+
+    //6-Focus
+    var input=document.querySelector("#nombre");
+    input.addEventListener('focus', function(){
+        console.log("Estas haciendo focus en este input");
+
+    })
+
+    //7-blur
+    input.addEventListener('blur', function(){
+        console.log("Estas fuera del input")
+    })
+
+    //8-keyhdown al escribir dentro del input
+    input.addEventListener('keydown', function(event){
+        console.log("Estas pilsando la tecla: ", String.fromCharCode(event.keyCode));
+    });
+
+    //9-keypress
+    input.addEventListener('keypress', function(event){
+    console.log("Tecla presionada con keypress", String.fromCharCode(event.keyCode)); 
+    });
+
+    //10-keyup
+    input.addEventListener('keyup', function(event){
+        console.log("Tecla soltada es: ", String.fromCharCode(event.keyCode));
+    });
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
